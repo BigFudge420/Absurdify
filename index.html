@@ -7,6 +7,7 @@
     <title>Sign Up | Absurdify™</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Belanosima:regular,600,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic" rel="stylesheet" />
 </head>
 <body>
     <div class="content">
@@ -17,6 +18,51 @@
                 <h1>Absurdify<sup>™</sup></h1>
             </div>
         </div>
+        <div class="right">
+            <div class="right-text">
+                <p id="text-1">This is not a real online service!You know you want something like this in your life to help you realize you deepest dreams.</p>
+                <p id="text-2">Sign up <em>now</em> to get started.</p>
+                <p id="text-3">You <em>know</em> you want to.</p>
+            </div>
+            <form action="example.com/path" method="post" onsubmit="return validateForm()" novalidate>
+                <div class="form">
+                    <h2>Let's do this!</h2>
+                    <div class="form-row">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                        <p class="email-error error-message"></p>
+                    </div>
+                    <div class="form-row">
+                        <label for="ph">Phone Number</label>
+                        <input type="tel" name="phone-number" id="ph" required>
+                        <p class="ph-error error-message"></p>
+                    </div>
+                    <div class="form-row">
+                        <label for="pass">Password</label>
+                        <input type="password" name="pass" id="pass" required> 
+                        <p class="pass-error error-message"></p>
+                    </div>
+                    <div class="form-row">
+                        <lable for="confirm-pass">Confirm Password</lable>
+                        <input type="password" name="confirm-pass" id="confirm-pass">
+                        <p class="confirm-error error-message"></p>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button type="submit">Create Account</button>
+                </div>
+            </form>   
+            <p>Already have an account? <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Log in</a></p>         
+        </div>
     </div>
 </body>
+<script src="script.js"></script>
 </html>
