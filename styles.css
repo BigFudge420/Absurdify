@@ -118,6 +118,12 @@ button{
 
 button:hover{
     box-shadow: gray 2px 2px 4px;
+    background-color: #fc4903;
+}
+
+button:active{
+    background-color: navy;
+    box-shadow: #fc4903 2px 2px 4px;
 }
 
 form input{
