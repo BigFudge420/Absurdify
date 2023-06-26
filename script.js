@@ -150,14 +150,18 @@ firstNameInput.addEventListener('input', validateFirstName)
 let lastNameInput = document.getElementById('last-name')
 lastNameInput.addEventListener('input', validateLastName)
 
-function validateForm() {
+function validateAll(){
     validateFirstName()
     validateLastName()
     validateEmail()
     validatePhone()
     validatePass()
     confirmPass()
-    
+}
+
+function validateForm() {
+    validateAll()
+
     if(validateEmail() && validateFirstName() && validateLastName() && validatePhone() && validatePass() && confirmPass()){
         return true
     }
